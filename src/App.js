@@ -5,10 +5,8 @@ const bodyParser= require('body-parser');
 
 const app = express();
 
-// app.use(express.static(__dirname + '../Public'));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-// console.log(11111111111111111);
 app.use(express.static(path.join(__dirname, '..','public')));
 
 app.post('/search',(req, res) =>{
@@ -17,7 +15,6 @@ app.post('/search',(req, res) =>{
  .then(result => result.json())
  .then(result => res.json(result))
  .catch(err=> console.log("error", err))
-//  console.log(res.json(result)')
 })
 
 app.get('/all',(req, res) =>{
