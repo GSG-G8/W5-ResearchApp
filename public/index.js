@@ -1,18 +1,7 @@
-// const data = {title: "java"};
-
-
-
 const input = document.querySelector('.query-search');
 const button = document.querySelector('.btn');
 const researchInput = document.querySelector('.research-input');
 const researchAll = document.querySelector('.research-all');
-
-
-
-// const researchInput = document.createElement('div');
-// researchInput.classList.add('research-input')
-// const researchAll = document.createElement('div');
-// researchInput.classList.add('research-all')
 
 
 const renderDataAll = (arr)=> {
@@ -38,7 +27,6 @@ const renderDataAll = (arr)=> {
 }
 
 const renderDataInput = (arr)=> {
-    console.log(1111111111111, arr);
     arr.map(el=> {
         const div = document.createElement('div');
         div.classList.add('content')
@@ -70,7 +58,6 @@ button.addEventListener('click', (e)=> {
     }
     )
     .then(res => res.json())
-    // .then(res=> console.log())
     .then(res=> renderDataInput(res.data))
     .catch(console.log)
 })
@@ -85,24 +72,4 @@ button.addEventListener('click', (e)=> {
 
  const item = document.createElement('div');
  item.classList.add('item')
-
-
-
-//  fetch(`/all` )
-//  .then(res=>res.json())
-//  .then(res=>{
-//     for(i=0; i<data.length; i++){
-//     const item = document.createElement('div');
-//     item.classList.add('item')
-//     item.textContent =  res.data[i]._source.authors[0] ;
-//     research.appendChild(item);
-
-//     const description = document.createElement('div');
-//     item.classList.add('item')
-//     item.textContent =  res.data[i]._source.authors[0] ;
-//     console.log(item);
-//     research.appendChild(item);
-// }
-
-// })
-//  .catch(err=> console.log(err));
+ 
