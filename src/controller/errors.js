@@ -1,5 +1,4 @@
 const path = require('path');
-const exports = ('express');
 
 exports.client = (req, res) => {
   res
@@ -13,6 +12,4 @@ exports.server = (err, req, res, next) => {
     .status(500)
     .sendFile(path.join(__dirname, '..', '..', 'Public', '500.html'));
 };
-
-module.exports = exports;
 
