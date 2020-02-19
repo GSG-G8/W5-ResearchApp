@@ -4,7 +4,7 @@ const app = require('./src/App');
 test('GET /' , done => {
     request(app)
     .get('/')
-    .expect('Content-Type' , /json/)
+    .expect('Content-Type' , /html/)
     .expect(200)
     .end((err , res) => {
         if(err) return done(err);
