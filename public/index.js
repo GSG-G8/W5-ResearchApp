@@ -1,8 +1,8 @@
+
 const input = document.querySelector('.query-search');
 const button = document.querySelector('.btn');
 const researchInput = document.querySelector('.research-input');
 const researchAll = document.querySelector('.research-all');
-
 
 const renderDataAll = (arr)=> {
     arr.map(el=> {
@@ -48,10 +48,17 @@ const renderDataInput = (arr)=> {
 
 
 
+
 button.addEventListener('click', (e)=> {
     const value = input.value;
-    console.log(value);
     
+  if(!value === ''){
+    button.addEventListener('click', (e)=> {
+    const value = input.value.trim();
+
+    console.log(value);
+
+
     fetch('/search', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
@@ -62,13 +69,12 @@ button.addEventListener('click', (e)=> {
     .then(res=> renderDataInput(res.data))
     .catch(console.log)
 })
-
-
-
+    }
+    
  fetch(`/all` )
  .then(res=>res.json())
  .then(res=> renderDataAll(res.data))
  .catch(err=> console.log(err));
 
 
- 
+
