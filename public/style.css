@@ -2,10 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lora', serif;
     color: #000;
     background-color: palegoldenrod;
   }
+
+  .output{
+    margin-left: 36%;
+    margin-bottom: 3%;
+    margin-top: 4%;
+  }
+
 
   .main{
     margin-left: 29%;
@@ -14,6 +21,27 @@
 
   h1{
     font-size: 41px;
+    /* font-family: 'Marvel', sans-serif; */
+    /* font-family: 'Sriracha', cursive; */
+    font-family: 'Fjalla One', sans-serif;
+
+  }
+
+  .para{
+    margin-left: -13%;
+    font-size: 23px;
+    margin-top: 1%;
+  }
+
+  .query-search{
+    width: 443px;
+    border: 1px solid black;
+    height: 43px;
+    border-radius: 27px;
+    margin-left: -5%;
+    margin-top: 2%;
+    outline: none;
+    font-size: 16px;
   }
 
   .main-search{
@@ -29,9 +57,11 @@
   .btn{
     margin-left: 2%;
     width: 97px;
-    height: 41px;
+    height: 43px;
     border: 1px solid black;
     border-radius: 22px;
+    outline: none;
+    font-size: 16px;
   }
 
 
@@ -42,13 +72,15 @@
 
   
  .research-input{
-   width: 70%;   
+   width: 60%;  
+   margin-left: 5%; 
    
   }
 
   .research-all{
-    width:35%;
+    width:30%;
     padding: 10px 5px;
+    margin-right: 3%;
     
   }
 
@@ -61,8 +93,26 @@
   margin-bottom: 20px;
   border: 1px solid black;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+
+/* Error Page Style */
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.error__desc {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.error__msg {
+  color: #999;
 }

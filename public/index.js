@@ -47,6 +47,7 @@ const renderDataInput = (arr)=> {
 }
 
 
+
 button.addEventListener('click', (e)=> {
     const value = input.value;
     console.log(value);
@@ -70,6 +71,4 @@ button.addEventListener('click', (e)=> {
  .catch(err=> console.log(err));
 
 
- const item = document.createElement('div');
- item.classList.add('item')
  
