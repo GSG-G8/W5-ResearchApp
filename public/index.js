@@ -46,17 +46,39 @@ const renderDataInput = (arr)=> {
     })
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+||||||| merged common ancestors
+<<<<<<<<< Temporary merge branch 1
+    if(!value === ''){
+    button.addEventListener('click', (e)=> {
+    const value = input.value.trim();
+||||||||| merged common ancestors
+=======
+>>>>>>> 900354559af8d315899929441ec6c51fc4b26219
 
+<<<<<<< HEAD
+button.addEventListener('click', (e)=> {
+    const value = input.value;
+||||||| merged common ancestors
+||||||| merged common ancestors
+button.addEventListener('click', (e)=> {
+    const value = input.value;
+=========
+
+=======
+
+>>>>>>> 900354559af8d315899929441ec6c51fc4b26219
 
 button.addEventListener('click', (e)=> {
     const value = input.value;
-    
-  if(!value === ''){
+<<<<<<< HEAD
+=======
+    if(!value === ''){
     button.addEventListener('click', (e)=> {
     const value = input.value.trim();
-
-    console.log(value);
+    // console.log(value);
 
 
     fetch('/search', {
@@ -75,6 +97,4 @@ button.addEventListener('click', (e)=> {
  .then(res=>res.json())
  .then(res=> renderDataAll(res.data))
  .catch(err=> console.log(err));
-
-
-
+}

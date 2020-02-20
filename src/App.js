@@ -3,7 +3,6 @@ const express = require("express");
 const fetch = require('node-fetch');
 const {client,server}=require('./controller/errors')
 require('dotenv').config();
-
 const app = express();
 
 app.use(express.json());
