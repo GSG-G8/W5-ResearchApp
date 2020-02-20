@@ -1,4 +1,4 @@
-[You can visit our site from this link](https://research-appp.herokuapp.com/)
+[You can visit our site from this link](https://research-app-ra.herokuapp.com/)
 # W5 Research App
 ## Team Members
 * Rawan Abudahrouj.
