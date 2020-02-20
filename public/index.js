@@ -47,20 +47,38 @@ const renderDataInput = (arr)=> {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+||||||| merged common ancestors
+<<<<<<<<< Temporary merge branch 1
+    if(!value === ''){
+    button.addEventListener('click', (e)=> {
+    const value = input.value.trim();
+||||||||| merged common ancestors
+=======
+>>>>>>> 900354559af8d315899929441ec6c51fc4b26219
 
+<<<<<<< HEAD
 button.addEventListener('click', (e)=> {
     const value = input.value;
 ||||||| merged common ancestors
+||||||| merged common ancestors
+button.addEventListener('click', (e)=> {
+    const value = input.value;
+=========
+
+=======
+
+>>>>>>> 900354559af8d315899929441ec6c51fc4b26219
 
 button.addEventListener('click', (e)=> {
     const value = input.value;
+<<<<<<< HEAD
 =======
     if(!value === ''){
     button.addEventListener('click', (e)=> {
     const value = input.value.trim();
->>>>>>> f43fc91e48a123feb101ac6bc5bfd955d5c6a31f
-    console.log(value);
+    // console.log(value);
 
 
     fetch('/search', {
@@ -79,15 +97,4 @@ button.addEventListener('click', (e)=> {
  .then(res=>res.json())
  .then(res=> renderDataAll(res.data))
  .catch(err=> console.log(err));
-
-
-<<<<<<< HEAD
- 
-||||||| merged common ancestors
- const item = document.createElement('div');
- item.classList.add('item')
- 
-=======
- const item = document.createElement('div');
- item.classList.add('item')
->>>>>>> f43fc91e48a123feb101ac6bc5bfd955d5c6a31f
+}
