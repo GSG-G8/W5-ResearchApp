@@ -1,14 +1,13 @@
-const express = require("express");
 const path = require('path');
-const {client,server}=require('./controller/errors')
+const express = require("express");
 const fetch = require('node-fetch');
-const bodyParser= require('body-parser');
+const {client,server}=require('./controller/errors')
 require('dotenv').config();
 
 const app = express();
 
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '..','public')));
 
 const apiId = process.env.apiId;
@@ -26,7 +25,6 @@ app.get('/all',(req, res) =>{
  .then(result => result.json())
  .then(result => res.json(result))
  .catch(err=> console.log("error", err))
-//  console.log(res.json(result)')
 })
 
 app.use(client);

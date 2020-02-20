@@ -46,9 +46,16 @@ const renderDataInput = (arr)=> {
     })
 }
 
-    if(!value === ''){
+
+
+
+button.addEventListener('click', (e)=> {
+    const value = input.value;
+    
+  if(!value === ''){
     button.addEventListener('click', (e)=> {
     const value = input.value.trim();
+
     console.log(value);
 
 
@@ -70,5 +77,4 @@ const renderDataInput = (arr)=> {
  .catch(err=> console.log(err));
 
 
- const item = document.createElement('div');
- item.classList.add('item')
+

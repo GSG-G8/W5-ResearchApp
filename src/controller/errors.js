@@ -1,15 +1,18 @@
 const path = require('path');
 
-exports.client = (req, res) => {
+const client = (req, res) => {
   res
     .status(404)
-    .sendFile(path.join(__dirname, '..', '..', 'Public', '404.html'));
+    .sendFile(path.join(__dirname, '..', '..', 'public', '404.html'));
 };
 
-exports.server = (err, req, res, next) => {
-  console.log(err.message);
+const server = (err, req, res, next) => {
   res
     .status(500)
-    .sendFile(path.join(__dirname, '..', '..', 'Public', '500.html'));
+    .sendFile(path.join(__dirname, '..', '..', 'public', '500.html'));
 };
 
+module.exports={
+  client,
+  server
+}
