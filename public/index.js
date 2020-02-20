@@ -1,8 +1,8 @@
+
 const input = document.querySelector('.query-search');
 const button = document.querySelector('.btn');
 const researchInput = document.querySelector('.research-input');
 const researchAll = document.querySelector('.research-all');
-
 
 const renderDataAll = (arr)=> {
     arr.map(el=> {
@@ -46,12 +46,23 @@ const renderDataInput = (arr)=> {
     })
 }
 
+<<<<<<< HEAD
 
 
 button.addEventListener('click', (e)=> {
     const value = input.value;
+||||||| merged common ancestors
+
+button.addEventListener('click', (e)=> {
+    const value = input.value;
+=======
+    if(!value === ''){
+    button.addEventListener('click', (e)=> {
+    const value = input.value.trim();
+>>>>>>> f43fc91e48a123feb101ac6bc5bfd955d5c6a31f
     console.log(value);
-    
+
+
     fetch('/search', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
@@ -62,13 +73,21 @@ button.addEventListener('click', (e)=> {
     .then(res=> renderDataInput(res.data))
     .catch(console.log)
 })
-
-
-
+    }
+    
  fetch(`/all` )
  .then(res=>res.json())
  .then(res=> renderDataAll(res.data))
  .catch(err=> console.log(err));
 
 
+<<<<<<< HEAD
  
+||||||| merged common ancestors
+ const item = document.createElement('div');
+ item.classList.add('item')
+ 
+=======
+ const item = document.createElement('div');
+ item.classList.add('item')
+>>>>>>> f43fc91e48a123feb101ac6bc5bfd955d5c6a31f
